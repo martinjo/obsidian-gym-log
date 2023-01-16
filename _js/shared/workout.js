@@ -281,12 +281,12 @@ class workout
 					        label: function(context)
 					        {
 						        let e = performedExercises[context.dataIndex];
-						        return ' ' + e['exercise'];
+						        return ' ' + e.frontmatter['exercise'];
 					        },
 							afterLabel: function(context)
 							{
 								let e = performedExercises[context.dataIndex];
-								return ' Effort: ' + e['effort'];
+								return ' Effort: ' + e.frontmatter['effort'];
 							}
 					    }
 				    }
