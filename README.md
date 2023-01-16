@@ -11,7 +11,23 @@ There are three different views/pages:
 - A workout view. Includes a list of remaining and performed exercies. 
   - Has en effort graph at the bottom
 - An exercise view that shows instructions and the last few times this exercise was performed.
-  - Has en effort/weight graph at the bottom   
+  - Has en effort/weight graph at the bottom
+  
+## Usage instructions
+1. Open the "Workout list" note
+2. Press the "Add workout" button
+3. Choose one a workout in the list that appears (there is only one example workout included)
+4. Go to the newly created workout by pressing it in the workout list
+5. Press the "Log" button
+6. Select an exercise from the list that appears.
+  - The list includes:
+    - "Start" - Will be the only item to appear in the list when no exercies has been logged. Will log the current time as start of the workout
+    - Remaining exercises (performed ones are filtered out)
+    - "Custom" - Log a custom exercise
+    - "Show all exercises" - removes the filter and shows all exercies regardless of if they have been logged during this workout
+
+<img width="704" alt="image" src="https://user-images.githubusercontent.com/1998726/212776351-fd77ebb8-7c00-413f-b4c1-eb435db52e57.png">
+
 
 ## Screenshots
 ### Workout list
