@@ -14,7 +14,7 @@ class exercise
 
 		if((weight != null || effort != null) && workout_id != null)
 		{
-			n.dv.header(2, "Previous log:")
+			n.dv.header(2, "Exercise log:")
 			if(weight != null)
 			{
 				n.dv.el('b', 'Weight: ');
@@ -83,7 +83,7 @@ class exercise
 		const efforts = performedExercises.map(e=> e['effort']);
 
 		let weight_ds = {
-		      label: 'Vikt',
+		      label: 'Weight',
 		      data: weights,
 		      borderColor: [ 'rgb(76, 0, 51)' ],
 		      //backgroundColor: Utils.transparentize(Utils.CHART_COLORS.red, 0.5),
