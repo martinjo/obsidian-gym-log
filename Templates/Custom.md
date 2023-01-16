@@ -2,10 +2,10 @@
 id: custom
 date: <% tp.date.now("YYYY-MM-DDTHH:mm:ss") %>
 time: <% tp.date.now("HH:mm") %>
-weight: <% await tp.system.prompt("Vikt", "", true) %>
-effort: <% await tp.system.suggester(["1 (lätt)", "2", "3", "4", "5 (failure)"], ["1", "2", "3", "4", "5"]) %>
-exercise: <% await tp.system.prompt("Övning", "", true) %>
-muscle_group: <% await tp.system.suggester(["Axlar", "Ben", "Biceps", "Bröst", "Mage", "Rygg", "Triceps"], ["Axlar", "Ben", "Biceps", "Bröst", "Mage", "Rygg", "Triceps"]) %>
+weight: <% await tp.system.prompt("Weight", "", true) %>
+effort: <% await tp.system.suggester(["1 (easy)", "2", "3", "4", "5 (failure)"], ["1", "2", "3", "4", "5"]) %>
+exercise: <% await tp.system.prompt("Exercise", "", true) %>
+muscle_group: <% await tp.system.suggester(["Shoulders", "Legs", "Biceps", "Chest", "Abs", "Back", "Triceps"], ["Shoulders", "Legs", "Biceps", "Chest", "Abs", "Back", "Triceps"]) %>
 note: <% await tp.system.prompt("Anteckning", "", true) %>
 reps: 6
 sets: 6

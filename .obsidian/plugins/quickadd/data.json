@@ -1,0 +1,50 @@
+{
+  "choices": [
+    {
+      "id": "d5df32b0-6a04-481d-9a8d-b9bd1b2f0ea7",
+      "name": "Log",
+      "type": "Macro",
+      "command": true,
+      "macroId": "aebdc4b3-6ef2-4295-b556-c67abc77ecb9"
+    },
+    {
+      "id": "b15a6358-38c0-47f6-afa2-45778dc5353d",
+      "name": "Add workout",
+      "type": "Macro",
+      "command": true,
+      "macroId": "14dd00dd-b788-416e-b37c-e464b19bb5bf"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Add exercise",
+      "id": "aebdc4b3-6ef2-4295-b556-c67abc77ecb9",
+      "commands": [
+        {
+          "name": "AddExercise",
+          "type": "UserScript",
+          "id": "432fcd44-330b-4389-acf7-473948cc8b55",
+          "path": "_js/scripts/AddExercise.js",
+          "settings": {}
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Add workout",
+      "id": "14dd00dd-b788-416e-b37c-e464b19bb5bf",
+      "commands": [
+        {
+          "name": "AddWorkout",
+          "type": "UserScript",
+          "id": "5764cc8a-5e37-477f-87c7-f1d8ff04c634",
+          "path": "_js/scripts/AddWorkout.js",
+          "settings": {}
+        }
+      ],
+      "runOnStartup": false
+    }
+  ],
+  "inputPrompt": "single-line",
+  "devMode": false
+}

@@ -2,15 +2,15 @@
 id: 293271
 date: <% tp.date.now("YYYY-MM-DDTHH:mm:ss") %>
 time: <% tp.date.now("HH:mm") %>
-weight: <% await tp.system.prompt("Vikt", "", true) %>
-effort: <% await tp.system.suggester(["1 (lätt)", "2", "3", "4", "5 (failure)"], ["1", "2", "3", "4", "5"]) %>
-exercise: Biceps - Hammarcurl
+weight: <% await tp.system.prompt("Weight", "", true) %>
+effort: <% await tp.system.suggester(["1 (easy)", "2", "3", "4", "5 (failure)"], ["1", "2", "3", "4", "5"]) %>
+exercise: Biceps - Hammercurl
 muscle_group: Biceps
-note: <% await tp.system.prompt("Anteckning", "", true) %>
+note: <% await tp.system.prompt("Note", "", true) %>
 reps: 6
 sets: 6
 video_url: "https://www.youtube.com/embed/xb6XLeWUVr8?feature=oembed"
-instructions: 'Ordentlig lutning på bänken, håll överarmen still och jobba enbart med biceps'
+instructions: 'This is the instruction for this workout'
 tags:
  - exercise
 ---

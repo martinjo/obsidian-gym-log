@@ -63,7 +63,7 @@ module.exports = async function listFiles(params) {
         const custom = filterFiles(function(frontmatter, tags){ return tags.includes('#custom') && frontmatter['workout_id'] == null;}, allFiles);
         exercises.push(custom[0]);
         // Add choise to show all exercises, regardless of workout
-        exercises.push({basename: 'Visa alla övningar'});
+        exercises.push({basename: 'Show all exercies'});
     }
 
     
@@ -79,7 +79,7 @@ module.exports = async function listFiles(params) {
         return;
     }
 
-    if(notesDisplay.basename == 'Visa alla övningar')
+    if(notesDisplay.basename == 'Show all exercies')
     {
         let allExercises = filterFiles((frontmatter, tags)=>{return tags.includes("#exercise") && frontmatter['workout_id'] == null}, allFiles);
         // Display all exercises

@@ -1,5 +1,5 @@
 ```button
-name Nytt pass
+name Add workout
 type command
 action QuickAdd: Add workout
 color green
@@ -11,15 +11,15 @@ color green
 let pages = dv.pages('"Workouts" and #workout').sort(p=> p.date, "desc");
 let workouts = []
 
-dv.header(3, "Totalt antal pass: " + pages.length.toString());
+dv.header(3, "Total number of workouts: " + pages.length.toString());
 
-dv.table(["Senaste pass", "Datum", "Typ av pass"], pages.slice(0,5)
+dv.table(["Last workouts", "Date", "Workout type"], pages.slice(0,5)
 	.map(e=> [e.file.link, moment(e['date']).format('YYYY-MM-DD'), e['workout']]))
 
 ```
 
 ```dataviewjs
-dv.span("** 😊 Träningspass  😥**") /* optional ⏹️💤⚡⚠🧩↑↓⏳📔💾📁📝🔄📝🔀⌨️🕸️📅🔍✨ */
+dv.span("** 😊 Workouts  😥**") /* optional ⏹️💤⚡⚠🧩↑↓⏳📔💾📁📝🔄📝🔀⌨️🕸️📅🔍✨ */
 const calendarData = {
     year: 2022,  // (optional) defaults to current year
     colors: {    // (optional) defaults to green

@@ -11,11 +11,11 @@ class workout
 		console.log(diff_days);
 
 		if(diff_days == 0)
-			n.dv.header(1, date.format('YYYY-MM-DD') + " (idag)");
+			n.dv.header(1, date.format('YYYY-MM-DD') + " (today)");
 		else if(diff_days == -1)
-			n.dv.header(1, date.format('YYYY-MM-DD') + " (igår)");
+			n.dv.header(1, date.format('YYYY-MM-DD') + " (yesteday)");
 		else if(diff_days == -2)
-			n.dv.header(1, date.format('YYYY-MM-DD') + " (i förrgår)");
+			n.dv.header(1, date.format('YYYY-MM-DD') + " (day before yesterday)");
 		else
 			n.dv.header(1, date.format('YYYY-MM-DD'));
 	}
@@ -96,7 +96,7 @@ class workout
 			templateExercies.push(['[[' + e.file.path + '|' + e['exercise'] + ']]', e["muscle_group"], lastPerformed["weight"], lastPerformed["effort"]]);
 		}
 
-		n.dv.table(["Övning", "💪🏻-grupp", "🏋🏼", "😥"], templateExercies);
+		n.dv.table(["Exercice", "💪🏻-group", "🏋🏼", "😥"], templateExercies);
 		    //.sort( e=> e['muscle_group'], 'desc'));
 	}
 
@@ -143,7 +143,7 @@ class workout
 			i++;
 		}
 
-		n.dv.table(["Övning", "🏋🏼", "⏱", "🗒"], performedExercises);
+		n.dv.table(["Exercice", "🏋🏼", "⏱", "🗒"], performedExercises);
 
 		if(lastTimeStamp != null && firstTimeStamp != null)
 		{
@@ -154,7 +154,7 @@ class workout
 			diff_min_remain = Math.round(diff_min_remain);
 			let totalTimeStr = diff_hours + "h " + diff_min_remain + "m";
 
-			n.dv.header(3, "Träningstid: " + totalTimeStr);
+			n.dv.header(3, "Workout time: " + totalTimeStr);
 		}
 	}
 
@@ -167,7 +167,7 @@ class workout
 		let workoutId = metadata.frontmatter['id'];
 		let allFiles = app.vault.getMarkdownFiles();
 
-		n.dv.header(2, "Ansträngningsprofil")
+		n.dv.header(2, "Effort profile")
 
 		let performedExercises = utils.filterFiles((fm, tags) => { return tags.includes('#exercise') && fm['workout_id'] === workoutId;}, allFiles);
 		performedExercises = utils.addTagsAndFrontmatter(performedExercises);
@@ -188,7 +188,7 @@ class workout
 		  labels: datum,
 		  datasets: [
 		    {
-		      label: 'Ansträngning',
+		      label: 'Effort',
 		      data: efforts,
 		      borderColor: [ 'rgb(232, 15, 136)' ],
 		      //backgroundColor: Utils.transparentize(Utils.CHART_COLORS.blue, 0.5),
@@ -217,7 +217,7 @@ class workout
 				title:
 				{
 					display: true,
-					text: 'Ansträngning'
+					text: 'Effort'
 				},
 				min: 0,
 				max: 6,
@@ -276,7 +276,7 @@ class workout
 					    {
 					        title: function(context)
 					        {
-						        return 'Övning:';
+						        return 'Exercice:';
 					        },
 					        label: function(context)
 					        {
@@ -286,7 +286,7 @@ class workout
 							afterLabel: function(context)
 							{
 								let e = performedExercises[context.dataIndex];
-								return ' Ansträngning: ' + e['effort'];
+								return ' Effort: ' + e['effort'];
 							}
 					    }
 				    }

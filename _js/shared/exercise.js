@@ -14,24 +14,24 @@ class exercise
 
 		if((weight != null || effort != null) && workout_id != null)
 		{
-			n.dv.header(2, "Senaste loggning:")
+			n.dv.header(2, "Previous log:")
 			if(weight != null)
 			{
-				n.dv.el('b', 'Vikt: ');
+				n.dv.el('b', 'Weight: ');
 				n.dv.span(weight.toString() + '\t');
 				n.dv.el("br", "");
 			}
 
 			if(effort != null)
 			{
-				n.dv.el('b', 'Ansträngning: ');
+				n.dv.el('b', 'Effort: ');
 				n.dv.span(effort.toString());
 				n.dv.el("br", "");
 			}
 
 			if(note != null)
 			{
-				n.dv.el('b', 'Anteckning ✏️: ');
+				n.dv.el('b', 'Note ✏️: ');
 				n.dv.span(note.toString());
 			}
 			n.dv.el("br", "");
@@ -39,7 +39,7 @@ class exercise
 		let instructions=`None`;
 		if(instructions!='None')
 		{
-			n.dv.header(2, 'Instruktioner');
+			n.dv.header(2, 'Instructions');
 			n.dv.paragraph(instructions)
 		}
 
@@ -57,7 +57,7 @@ class exercise
 		let exercises = n.dv.pages('#exercise');
 		let performedExercises = []
 
-		n.dv.header(2, "Tidigare övningar")
+		n.dv.header(2, "Past exercises")
 
 		for(var e of exercises)
 		{
@@ -95,7 +95,7 @@ class exercise
 		  labels: datum,
 		  datasets: [
 		    {
-		      label: 'Antsträngning',
+		      label: 'Effort',
 		      data: efforts,
 		      borderColor: [ 'rgb(232, 15, 136)' ],
 		      //backgroundColor: Utils.transparentize(Utils.CHART_COLORS.blue, 0.5),
@@ -137,7 +137,7 @@ class exercise
 				title:
 				{
 					display: true,
-					text: 'Vikt'
+					text: 'Weight'
 				},
 				grace: 1,
 				type: 'linear',
@@ -149,7 +149,7 @@ class exercise
 				title:
 				{
 					display: true,
-					text: 'Ansträngning'
+					text: 'Effort'
 				},
 				min: 0,
 				max: 6,
@@ -254,7 +254,7 @@ class exercise
 			i++;
 		}
 		let columns = [];
-		columns.push("Övning");
+		columns.push("Exercise");
 		columns.push("⏱");
 		if(hasWeights)
 			columns.push("🏋🏼",);

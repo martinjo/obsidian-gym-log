@@ -1,11 +1,11 @@
 ---
 date: <% tp.date.now("YYYY-MM-DDTHH:mm:ss") %>
 time: <% tp.date.now("HH:mm") %>
-exercise: Påbörjade pass
+exercise: Workout start
 tags:
  - log
  - start
  - exercise
 ---
 
-**Passet påbörjades: ** <% tp.date.now("YYYY-MM-DD - HH:mm") %>
+**Workout started: ** <% tp.date.now("YYYY-MM-DD - HH:mm") %>
