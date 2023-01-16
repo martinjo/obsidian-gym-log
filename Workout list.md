@@ -21,7 +21,7 @@ dv.table(["Last workouts", "Date", "Workout type"], pages.slice(0,5)
 ```dataviewjs
 dv.span("** 😊 Workouts  😥**") /* optional ⏹️💤⚡⚠🧩↑↓⏳📔💾📁📝🔄📝🔀⌨️🕸️📅🔍✨ */
 const calendarData = {
-    year: 2022,  // (optional) defaults to current year
+    year: 2023,  // (optional) defaults to current year
     colors: {    // (optional) defaults to green
         blue:        ["#8cb9ff", "#69a3ff", "#428bff", "#1872ff", "#0058e2"], // first entry is considered default if supplied
         green:       ["#c6e48b", "#7bc96f", "#49af5d", "#2e8840", "#196127"],

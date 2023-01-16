@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Workouts/2023-01-16 - Pass 2-1 Abs-Back-Biceps-Triceps/Pass 2-1 Abs-Back-Biceps-Triceps.md",
+                "file": "Workout list.md",
                 "mode": "preview",
                 "source": true
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Workouts/2023-01-16 - Pass 2-1 Abs-Back-Biceps-Triceps/Pass 2-1 Abs-Back-Biceps-Triceps.md",
+                "file": "Workout list.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Workouts/2023-01-16 - Pass 2-1 Abs-Back-Biceps-Triceps/Pass 2-1 Abs-Back-Biceps-Triceps.md",
+                "file": "Workout list.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Workouts/2023-01-16 - Pass 2-1 Abs-Back-Biceps-Triceps/Pass 2-1 Abs-Back-Biceps-Triceps.md"
+                "file": "Workout list.md"
               }
             }
           }
@@ -157,15 +157,15 @@
   },
   "active": "40e625f2fde5a347",
   "lastOpenFiles": [
-    "Templates/exercises/Lats/Lats - Chins.md",
-    "Workouts/2023-01-16 - Pass 2-1 Abs-Back-Biceps-Triceps/Pass 2-1 Abs-Back-Biceps-Triceps.md",
-    "Templates/exercises/Biceps/Biceps - Hammercurl.md",
+    "README.md",
     "Workout list.md",
+    "Workouts/2023-01-16 - Pass 2-1 Abs-Back-Biceps-Triceps/Pass 2-1 Abs-Back-Biceps-Triceps.md",
+    "Templates/exercises/Lats/Lats - Chins.md",
+    "Templates/exercises/Biceps/Biceps - Hammercurl.md",
     "Templates/Workouts/gym/Pass 2-1 Abs-Back-Biceps-Triceps.md",
     "Workouts/2023-01-16 - Pass 2-1 Mage-Rygg-Biceps-Triceps/Pass 2-1 Mage-Rygg-Biceps-Triceps.md",
     "Templates/Custom.md",
     "Templates/Start.md",
-    "Templates/Egen.md",
-    "Templates/exercises/Axlar/Alt Standing military press -  i CableCross.md"
+    "Templates/Egen.md"
   ]
 }
