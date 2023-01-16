@@ -8,9 +8,22 @@ The example files still have Swedish text in them. That will be fixed eventually
 
 There are three different views/pages:
 - Overview / a list of workouts that have been performed. This includes a heatmap.
-- A workout view. Includes a list of exercies to perform showing the last weight used and what effort was needed.
+- A workout view. Includes a list of remaining and performed exercies. 
+  - Has en effort graph at the bottom
 - An exercise view that shows instructions and the last few times this exercise was performed.
-- At the bottom is a graph of the logged effort and weights used when performing this exercise.
+  - Has en effort/weight graph at the bottom   
+
+## Screenshots
+### Workout list
+<img width="757" alt="image" src="https://user-images.githubusercontent.com/1998726/212775247-299b598f-8a13-4890-8096-a934053d53f4.png">
+
+### Workout
+<img width="752" alt="image" src="https://user-images.githubusercontent.com/1998726/212775278-9d5865b4-ca97-401d-83f2-7158ac2a5cc4.png">
+
+### Exercise
+<img width="738" alt="image" src="https://user-images.githubusercontent.com/1998726/212775484-53bc6b46-ad21-4088-b398-fd3ce2699564.png">
+
+# Configuration
 
 ## Used plugins
 The following amazing plugins are used:
@@ -22,16 +35,6 @@ The following amazing plugins are used:
 - [MediaExtended](https://github.com/aidenlx/media-extended)
 - [Heatmap Calendar](https://github.com/Richardsl/heatmap-calendar-obsidian)
 - [CustomJS](https://github.com/saml-dev/obsidian-custom-js)
-
-## Screenshots
-### Overview
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/1998726/211056655-33192041-1e1b-4523-b3fb-638a5bbce0dd.png">
-
-### Workout
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/1998726/211057682-621bfac1-2452-49d3-b8ef-14ac3332516a.png">
-
-### Exercise
-<img width="747" alt="image" src="https://user-images.githubusercontent.com/1998726/211059980-11e28c40-948c-4634-8a7f-2636a1cca0ee.png">
 
 ## Configuration of QuickAdd
 1. Open QuickAdd settings
