@@ -4,8 +4,6 @@ A simple gym workout log for [Obsidian](https://obsidian.md/).
 To use this you need to edit your own exercises and workouts.
 There is a basic example workout with two exercises included.
 
-The example files still have Swedish text in them. That will be fixed eventually.
-
 There are three different views/pages:
 - Overview / a list of workouts that have been performed. This includes a heatmap.
 - A workout view. Includes a list of remaining and performed exercies. 
