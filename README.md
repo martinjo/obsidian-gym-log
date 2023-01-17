@@ -19,7 +19,7 @@ There are three different views/pages:
 5. Press the "Log" button
 6. Select an exercise from the list that appears.
   - The list includes:
-    - "Start" - Will be the only item to appear in the list when no exercies has been logged. Will log the current time as start of the workout
+    - "Start" - Will be the only item to appear in the list when no exercies have been logged. Will log the current time as start of the workout
     - Remaining exercises (performed ones are filtered out)
     - "Custom" - Log a custom exercise
     - "Show all exercises" - removes the filter and shows all exercies regardless of if they have been logged during this workout
