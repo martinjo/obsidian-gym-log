@@ -14,7 +14,7 @@ There are three different views/pages:
 ## Usage instructions
 1. Open the "Workout list" note
 2. Press the "Add workout" button
-3. Choose one a workout in the list that appears (there is only one example workout included)
+3. Choose a workout in the list that appears (there is only one example workout included)
 4. Go to the newly created workout by pressing it in the workout list
 5. Press the "Log" button
 6. Select an exercise from the list that appears.
